@@ -210,7 +210,7 @@ chart.render();
     <!-- ******************** HeaderWrap ********************-->
     <div id="headerwrap">
       <header class="clearfix">
-        <h1>THE <span>LOCATION</span> EXPERIMENT:<br><span> what</span> my location <span>says</span> about <span>me</span></h1>
+        <h1><span>THE LOCATION EXPERIMENT</span><br>what my location says about me</span></h1>
         <div class="container">
           <div class="row">
             <div class="span12">
@@ -246,7 +246,7 @@ chart.render();
             <div class="featurette">
               <h2 class="featurette-heading">So what's the idea?<span class="muted">| why should I care</span></h2>
             <p>Through the ubiquity of smartphones, an enormous quantity of location data is available in the United States. With these data, much can be guessed about a person based on where they go, how often they go there, and how long they stay. This experiment explores how much I could learn about myself using only my location data as tracked by google.</p>
-            <p>Collecting my personal location data was so easy it was scary. Turns out, my locations are being tracked by google. If you want to see if you're being tracked, check out <a href="http://www.google.com/locationhistory">Google's Location History website</a>. It allows you to export up to 30 days of location history in a kml file. After I collected 30 days of location data, I challenged myself to guess a few things about...myself.</p>
+            <p>Collecting my personal location data was so easy it was scary. Turns out, my locations are being tracked by google. If you want to see if you're being tracked, check out <a href="http://www.google.com/locationhistory">Google's Location History website</a>. It allows you to export up to 90 days of location history in a kml file. After I collected 90 days of location data, I challenged myself to guess a few things about...myself.</p>
 <p>I started with the basics: where do I work and where do I sleep. But that was easy. I wanted to see how far I could take it, so I started asking questions like: how much money am I probably making? What's my likely ethnicity? What is my favorite type of drink? I wanted to see how personal I could get.
 </p>
             </div>
@@ -274,7 +274,10 @@ chart.render();
             <div class="mask2"> <a href="img/map_images/working_hours.png" rel="prettyPhoto"><img src="img/map_images/working_hours.png" alt=""></a> </div>
                 <a class="more-link" href="img/map_images/working_hours.png">view map</a> </div>
               <div class="entry-content">
-                <p>To figure out where I work, I focused in on DC, and looked for my locations during normal business hours (excluding holidays - which in this case included Thanksgiving and the Friday after, Christmas Day, New Year's Eve and New Year's day, and Martin Luther King day). Using point density analysis, I was able to determine that during the working day I can be found in one of these 3 areas. We could narrow this down significantly but I'm keeping things relatively generalized to not give exact personal details away. These three areas are very distinct in their composition. The northern-most point is a residential area that has several service-orientated sectors nearby. The eastern-most area focuses on a governmental department building, while the western-most area focuses on a building occupied by Deloitte LLP and CEB advisory. So, this character potentially works for a consulting firm that supports a federal department.</p>
+                <p>To figure out where I work, I focused in on DC, and looked for my locations during normal business hours (excluding holidays - which in this case included Thanksgiving and the Friday after, Christmas Day, New Year's Eve and New Year's day, and Martin Luther King day). Using point density analysis, I was able to determine that during the working day I can be found in one of these 3 areas. We could narrow this down significantly but I'm keeping things relatively generalized to not give exact personal details away. 
+</p>
+<p>
+These three areas are very distinct in their composition. The northern-most point is a residential area that has several service-orientated sectors nearby. The eastern-most area focuses on a governmental department building, while the western-most area focuses on a building occupied by Deloitte LLP and CEB advisory. So, this character potentially works for a consulting firm that supports a federal department.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -287,7 +290,7 @@ chart.render();
             <div class="mask2"> <a href="img/map_images/live.png" rel="prettyPhoto"><img src="img/map_images/live.png" alt=""></a> </div>
                 <a class="more-link" href="img/map_images/live.png">view map</a> </div>
               <div class="entry-content">
-                <p>Looking at non-business hours, it was very clear where I live. In fact, if I wasn't generalizing things, you could make an educated guess as to my apartment number, or an exact guess if I threw in elevation data. Also, from these results it appears as though I may telework on occasion. Ok, so that narrows down my likely place of business to two areas - one near the mall and the other in Rosslyn Virginia.</p>
+                <p>Looking at non-business hours, it was very clear where I live. In fact, if I wasn't generalizing things, you could make an educated guess as to my apartment number, or an exact guess if I threw in elevation data. Also, from these results it appears as though I may telework on occasion. Ok, so that narrows down my likely place of business to two areas - the one near the mall and the other in Rosslyn Virginia. I can easily identify the building, and even the part of the building where I sit.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -303,7 +306,7 @@ chart.render();
               </hgroup>
 <div class="mask2" id="chartContainer" style="height: 300px; width: 100%;"></div>
               <div class="entry-content">
-                <p>Using real estate resources, I quickly looked up the average cost of apartments in the building where I reside. The mean cost of apartments is $568,800, with 95% confidence that the value of the apartment is somewhere between $526,746 and $610,819. Assuming general industry guidelines, I probably bought the property with down payment of 10%, an interest rate of 4.2%, and monthly costs that fall between 30% and 50% of my total household income. These estimates place the monthly cost of ownership between $3,108 and $3,745, and as a result, it's likely that my household brings in between $74,592 and $149,800.</p>
+                <p>Using real estate resources, I quickly looked up the average cost of apartments in the building where I reside. The mean cost of apartments is $568,800, with 95% confidence that the value of the apartment is somewhere between $526,746 and $610,819. Assuming general industry guidelines, I probably bought the property with down payment of 10%, an interest rate of 4.2%, and monthly costs that fall between 30% and 50% of my total household income. These estimates place the monthly cost of ownership between $3,108 and $3,745, and as a result, it's likely that my household brings in between $74,592 and $149,800. I could further refine these numbers if I used the square footage I estimated from the map data.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -317,7 +320,7 @@ chart.render();
             <div class="mask2"> <a href="img/map_images/weekends.png" rel="prettyPhoto"><img src="img/map_images/weekends.png" alt=""></a> </div>
                 <a class="more-link" href="img/map_images/weekends.png">view map</a> </div>
               <div class="entry-content">
-                <p>It looks like I tend to chill at home for the majority of the time, however evidently I roam around from time to time.</p>
+                <p>It looks like I tend to chill at home for the most part, however I evidently roam around from time to time. I tend to frequent a few specific coffee shops, one diner, and a whisky specialty bar. But as I'm going through these data, it's clear that these are personal data.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -330,7 +333,13 @@ chart.render();
             <div class="mask2"> <a href="img/map_images/polyline.png" rel="prettyPhoto"><img src="img/map_images/polyline.png" alt=""></a> </div>
                 </div>
               <div class="entry-content">
-                <p>We've learned several things about this character. They work at a federal agency, Deloitte LLP or CEB in Arlington, and from home. They usually take the Red or Yellow/Green line to get to work, depending on if they are going to the federal agency's location or Deloitte's/CEB's. Based on where  </p>
+                <p>I've identified several things about myself. I work at a federal agency, Deloitte LLP or CEB in Arlington, and from home. I can demonstrate my commute on the Red or Yellow/Green lines to get to work. It's clear from the results that I work for a federal agency and/or Deloitte/CEB, and we can infer my salary from several different sources. </p>
+<p>
+Additionally, the map shows where I buy my groceries, where I like to get coffee on weekends, and where I have a dram from time to time. It shows the two hours I spent meeting my parents at their hotel when they drove down to visit me a few weeks ago, which from the map data alone looked odd; I visited a hotel 5 blocks away from my house for 2 hours on a Friday night - without context that's an odd pattern of behavior. But it goes further: it literally shows me getting out of bed last Saturday. If I were so inclined, I could give you the time I leave for work in the morning with confidence intervals...and that feels weird.
+</p>
+<p>
+The point is, when I began this project, I was happy to volunteer my location because the opportunity to work with good data is always fun. But as I looked through the results, the less comfortable I became. Even with this most trivial analysis, I could see quite a bit. Ultimately, I have nothing to hide, but these data feel personal, and now I'm considering removing the tracking function on Google.
+</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -344,7 +353,7 @@ chart.render();
     <!--******************** News Section ********************-->
     <div id="headerwrap">
       <header class="clearfix">
-        <h1>WHAT DOES <span>YOUR LOCATION</span> DATA <span>SAY?</span></h1>
+        <h1>WHAT DOES <span>YOUR LOCATION SAY?</span></h1>
         <div class="container">
           <div class="row">
             <div class="span12">
