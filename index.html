@@ -239,7 +239,6 @@ chart.render();
         <!-- ./container -->
       </section>
     </div>
-    <hr>
     <!--******************** The Results Section ********************-->
     <section id="idea" class="single-page scrollblock">
       <div class="container">
@@ -253,6 +252,16 @@ chart.render();
 </section>
 <section id="results" class="single-page scrollblock">
         <div class="container">
+          <div class="featurette">
+            <div class="inside">
+              <hgroup>
+                <h2>Profiling the target customer</h2>
+              </hgroup>
+              <div class="entry-content">
+                <p>The first objective is to profile the customer.</p>
+            </div>
+            <!-- /.inside -->
+          </div>
           <div class="featurette">
             <div class="inside">
               <hgroup>
@@ -320,7 +329,7 @@ These three areas are very distinct in their composition. The northern-most poin
             <div class="mask2"> <a href="img/map_images/weekends.png" rel="prettyPhoto"><img src="img/map_images/weekends.png" alt=""></a> </div>
                 <a class="more-link" href="img/map_images/weekends.png">view map</a> </div>
               <div class="entry-content">
-                <p>So what do I do on weekends? It looks like I tend to stay near home for the most part, frequenting a few nearby coffee shops, one diner, and a whisky specialty bar. When I leave the neighborhood, I evidently spend some time in Georgetown and the mall, usually stopping off at coffee shops for a change of pace. These data really feel personal at this point.</p>
+                <p>So what do I do on weekends? It looks like I tend to stay near home for the most part, frequenting a few nearby coffee shops, one diner, and a whisky specialty bar. When I leave the neighborhood, I evidently spend some time in Georgetown and the mall, usually stopping off at coffee shops for a change of pace.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -335,16 +344,72 @@ These three areas are very distinct in their composition. The northern-most poin
               <div class="entry-content">
                 <p>So from this experiment I've been able to identify several things about myself. I work at a federal agency, Deloitte LLP or CEB in Arlington, and my position allows me to work from home on occasion. I can demonstrate my commute on the Red or Yellow/Green lines to get to work, and I can infer my salary from several different sources - one being my apartment building. </p>
 <p>
-Additionally, the map shows where I buy my groceries, where I like to get coffee on weekends, and where I have a dram from time to time. It shows the two hours I spent meeting my parents at their hotel when they drove down to visit me a few weeks ago, which from the map data alone looked odd; I visited a hotel 5 blocks away from my house for 2 hours on a Friday night - without context that's an odd pattern of behavior. But it goes further: it literally shows me getting out of bed last Saturday. If I were so inclined, I could give you the time I leave for work in the morning with confidence intervals...and that feels weird.
+Importantly, where I like to get coffee.
 </p>
-<p>
-The point is, when I began this project, I was happy to volunteer my location because the opportunity to work with good data is always fun. But as I looked through the results, the less comfortable I became. Even with this most trivial analysis, I could see quite a bit. Ultimately, I have nothing to hide, but these data feel personal, and now I'm considering removing the tracking function on Google.
-</p>
-<br>
+
             </div>
             <!-- /.inside -->
           </div>
+</div>
+
+                <h2>So we've profiled the customer, now what?</h2>
+<p>After we've profiled the customer, let's figure out where they are buying their coffee.</p>
+
           <!-- /.span4 -->
+<!-- Beginning -->
+                <h2>Where are they buying coffee?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/coffeeshops_zoom.png" rel="prettyPhoto"><img src="img/map_images/coffeeshops_zoom.png" alt=""></a> </div>
+               <div> <a class="more-link" href="img/map_images/coffeeshops_zoom.png">view map</a> </div> <div class="entry-content"> <p>From the analysis, it is clear that despite being closer to their home, our target will consistently choose a nearby coffeeshop over Starbucks. In fact, our target appears to have never stepped foot in the nearby Starbucks.</p>
+            </div>
+<!-- End -->
+<!-- Beginning -->
+                <h2>When does our target visit the competitor?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/timeofday.png" rel="prettyPhoto"><img src="img/map_images/timeofday.png" alt=""></a> </div>
+               <div> <a class="more-link" href="img/map_images/timeofday.png">view map</a> </div>
+              <div class="entry-content">
+                <p>Our target has visited the coffee shop a total of 20 times during the three months analyzed. All 20 visits have occurred during the weekend, and the hour where our target is located at the coffee shop shows a uniform distribution between the hours of 8AM to 6PM.</p>
+            </div>
+<!-- End -->
+<!-- Beginning -->
+                <h2>How long does our target stay?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/duration.png" rel="prettyPhoto"><img src="img/map_images/duration.png" alt=""></a> </div>
+               <div> <a class="more-link" href="img/map_images/duration.png">view map</a> </div>
+              <div class="entry-content">
+                <p>For the majority of times the target visits the competition, they will stay at the coffee shop for more than 30 minutes. Thirty percent of time, they stop in and leave immediately. Assuming the duration of their stay is correlated with the number of purchases made (including meals), we can assume that this particular customer has a relatively high average amount of money spent per visit. In fact, if we make some basic inferences, we can estimate the total amount of money spent by our target, as well as their average money spent per vist.</p>
+<p>
+Let's assume that during the times when our target simply enters and leaves the coffee shop that they are simply purchasing a single coffee at a value of $2.50. Let's also assume that for visits longer than that, the target buys at least 1 coffee per hour, with a maximum number of 3 coffees per day. Additionally, for visits lasting between 1 and 10 hours, let's assume the target has purchased one meal every 6 hours at a value of $15 dollars. With these basic assumptions, we can therefore infer taht the total amount spent by this individual has been $132.50 over a period of 3 months, or $6.63 per visit. 
+</p>
+            </div>
+<!-- End -->
+<!-- Beginning -->
+                <h2>What's different about the competition?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/paulvsstarbucks.png" rel="prettyPhoto"><img src="img/map_images/paulvsstarbucks.png" alt=""></a> </div>
+               <div> <a class="more-link" href="img/map_images/paulvsstarbucks.png">view map</a> </div>
+              <div class="entry-content">
+                <p>Why does our target prefer to go to the competitor? One possible explanation is that the target does not like chains. Unfortunately, the map data suggests that this probably isn't the case. Zooming out and looking at what other coffee shops this target prefers, we find that the target often frequents the coffee shop and bakery "Paul", a large chain that's often located within sight of Starbucks. This is a very large chain, and therefore we can assume that generally, the target will accept purchasing coffee from a big-box chain.</p>
+            </div>
+<!-- End -->
+<!-- Beginning -->
+                <h2>So what can we do about it?</h2>
+              </hgroup>
+            <div class="mask2"> <a href="img/map_images/move.png" rel="prettyPhoto"><img src="img/map_images/move.png" alt=""></a> </div>
+               <div> <a class="more-link" href="img/map_images/move.png">view map</a> </div>
+              <div class="entry-content">
+                <p>From location data alone, we now know that the target will choose our competitors every time given the chance. They will walk longer distances for similar prices and no complimentary wifi. We know the target stays for relatively long periods of time on the weekends, and does not visit coffee shops during the week.</p>
+<p>
+So why are they doing this? What makes the competitors that much more attractive. When comparing Paul and Starbucks, the clear differentiation is the type of food provided. Paul is known as a high-end French patisserie that bakes on site. Looking at Tryst's menu, it appears they also serve freshly made croissants. Perhaps to attract this target, Starbucks should consider improving the quality of their french pastries.
+</p>
+<p>
+The target also appears to spend a significant amount of time at the coffee shop, potentially reading or working. Therefore, perhaps the ambiance is an important factor, and perhaps comparing the interiors of the competitors would be valuable.</p>
+            </div>
+<br>
+<!-- End -->
+            <!-- /.inside -->
+          </div>
         </div>
         <!-- /.row -->
       </div>
