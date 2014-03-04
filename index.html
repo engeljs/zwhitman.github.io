@@ -211,15 +211,6 @@ chart.render();
     <div id="headerwrap">
       <header class="clearfix">
         <h1><span>THE LOCATION EXPERIMENT</span><br>the value of tracking customer location</span></h1>
-        <div class="container">
-          <div class="row">
-            <div class="span12">
-<!--
-              <input type="text" name="your-email" placeholder="you@yourmail.com" class="cform-text" size="40" title="your email">
-              <input type="submit" value="Notify me" class="cform-submit">
--->
-            </div>
-          </div>
       </header>
     </div>
     <!--******************** Feature ********************-->
@@ -250,15 +241,15 @@ chart.render();
 </p>
 
 <p>
-So I decided to find out for them. In this experiment, I attempt to profile myself using only my location data as recorded by my smartphone. I will then use these data from the perspective of Starbucks to better target me as a customer.
+So I decided to find out for them. In this experiment, I attempt to profile myself using only my location data as recorded by my smartphone. I will then use these data from the perspective of Starbucks to figure out how they could get me into their store.
 </p>
 
 <p>
-For this experiment, I needed personal location data, but I don't have Starbuck's mobile payment application on my phone. So, I collected 90 days of data from <a href="http://www.google.com/locationhistory">Google's Location History website</a>, a veritable treasure trove of "geolocation tracking points". Convienently, Google allows you to export 30 days of location history in a single kml file.
+For this experiment, I needed personal location data, but I don't have Starbuck's mobile payment application on my phone. So, I collected 90 days of data from <a href="http://www.google.com/locationhistory">Google's Location History website</a>, a veritable treasure trove of "geolocation tracking points". 
 </p>
 
 <p>
-After collecting these location data, I first wanted to profile myself so I started with the basics: where do I work, where do I sleep, and how much money do I probably make. I then wanted to identify my coffee purchasing habits, determining the cafes I normally frequent, my typical length of stay per visit, and how much do I likely spend. Finally, I wanted to figure out why I wasn't going to Starbucks, and identify what Starbucks could do to attract my business. 
+After collecting these data, I first wanted to profile myself so I started with the basics: where do I work, where do I sleep, and how much money do I probably make. I then wanted to identify my coffee purchasing habits, determining the cafes I normally frequent, the time I usually spend per visit, and how much am I likely spending. Finally, I wanted to figure out why I wasn't going to Starbucks, and identify what Starbucks could do to attract my business. 
 </p>
 
 <p>
@@ -280,7 +271,7 @@ As a disclaimer before moving into the findings, I've kept most of my results as
             <div class="mask2"> <a href="img/map_images/where_in_the_world.png" rel="prettyPhoto"><img src="img/map_images/where_in_the_world.png" alt=""></a> </div>
                 <a class="more-link" href="img/map_images/where_in_the_world.png">view map</a> 
               <div class="entry-content">
-                <p>Starting simply, it's clear that the target (me) is located in the United States. A simple point density analysis shows that I am most often found in Washington DC, with a few exceptions that include: New York City, Rochester NY, and Dallas TX. For the purposes of this experiment, we will only focus on DC.</p>
+                <p>Starting simply, it's clear from the data that I am located in the United States. A simple point density analysis shows that I am most often found in Washington DC, with a few exceptions that include: New York City, Rochester NY, and Dallas TX. For the purposes of this experiment, we will only focus on DC.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -295,7 +286,7 @@ As a disclaimer before moving into the findings, I've kept most of my results as
                 <a class="more-link" href="img/map_images/working_hours.png">view map</a> 
               <div class="entry-content">
 
-<p>To figure out where I work, I looked for my locations during normal business hours (excluding holidays). I was able to determine that during the working day I can be found in one of these 3 areas. These three areas are very distinct in their composition. The northern-most point is a residential area that has several service-orientated sectors nearby. The eastern-most area focuses on a governmental department building, while the western-most area focuses on a building in Rosslyn Virginia which is occupied by Deloitte LLP and CEB advisory. Also, the target in question makes semi-regular trips between the governmental department building and the Deloitte/CEB building during the day so it's likely that this character works for a consulting firm that supports a federal department. From these results it also appears as though I may telework on occasion. 
+<p>To figure out where I work, I isoloated my locations during normal business hours (excluding holidays). From this, it was clear that during the working day I can be found in one of these 3 very distinctive areas. The northern-most point is a residential area that has several service-orientated sectors nearby. The eastern-most area is located directly on a governmental department building, while the western-most area centers on a building in Rosslyn Virginia which is occupied by Deloitte LLP and CEB advisory. Also, I make semi-regular trips between the governmental department building and the Deloitte/CEB building during the day so it's likely that this character works for a consulting firm that supports a federal department. From these results it also appears as though I may telework on occasion. 
 </p>
             </div>
             <!-- /.inside -->
@@ -310,7 +301,7 @@ As a disclaimer before moving into the findings, I've kept most of my results as
             <div class="mask2"> <a href="img/map_images/live.png" rel="prettyPhoto"><img src="img/map_images/live.png" alt=""></a> </div>
                 <a class="more-link" href="img/map_images/live.png">view map</a> </div>
               <div class="entry-content">
-                <p>Looking at non-business hours, it was very clear where I live. In fact, if I wasn't generalizing things, you could make an educated guess as to my apartment number, or an exact guess if I threw in elevation data. Also, it's very easy to estimate my apartment's square footage.</p>
+                <p>Looking at non-business hours, it was very clear where I live. In fact, if I wasn't generalizing things, you could make an educated guess as to my apartment number, or an exact guess if I threw in elevation data. It is so accurate that I can estimate my apartment's square footage.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -335,12 +326,12 @@ As a disclaimer before moving into the findings, I've kept most of my results as
           <div class="span12">
             <div class="inside">
               <hgroup>
-                <h2>When do I drink coffee?</h2>
+                <h2>When do I buy coffee?</h2>
               </hgroup>
             <div class="mask2"> <a href="img/map_images/weekends.png" rel="prettyPhoto"><img src="img/map_images/weekends.png" alt=""></a> </div>
                 <a class="more-link" href="img/map_images/weekends.png">view map</a> </div>
               <div class="entry-content">
-                <p>So when do I buy coffee? It looks like during the weekends, where I tend to stay near home for the most part, frequenting a few nearby coffee shops, one diner, and a whisky specialty bar. I threw that last detail in because if Starbucks wants to get into whisky, I would be supportive. When I leave the neighborhood, I evidently spend some time in Georgetown and the mall, usually stopping off at coffee shops for a change of pace.</p>
+                <p>So when do I buy coffee? It looks like during the weekends, where I tend to stay near home for the most part, frequenting a few nearby coffee shops, one diner, and a whisky specialty bar. I threw that last detail in because if Starbucks wanted to get into whisky, I would be supportive. When I leave the neighborhood, I evidently spend some time in Georgetown and the mall, usually stopping off at coffee shops for a change of pace.</p>
             </div>
             <!-- /.inside -->
           </div>
@@ -349,30 +340,32 @@ As a disclaimer before moving into the findings, I've kept most of my results as
 
 	   <h1>How can Starbucks use these data?</h1>
 <br>
+<hgroup>
                 <h2>Where am I buying coffee?</h2>
               </hgroup>
             <div class="mask2"> <a href="img/map_images/coffeeshops_zoom.png" rel="prettyPhoto"><img src="img/map_images/coffeeshops_zoom.png" alt=""></a> </div>
-               <div> <a class="more-link" href="img/map_images/coffeeshops_zoom.png">view map</a> </div> <div class="entry-content"> <p>There are several Starbucks near my home, and one that falls directly in the area where I am most often during weekends. However from the data, it is clear that despite being closer to the house, our target consistently has chosen a nearby independent coffee shop instead of Starbucks. In fact, our target appears to have never stepped foot in the nearby Starbucks. The nearby coffee shop has comperable pricing, and no free wifi during the weekend. Two distinguishing features of the independent coffee shop is that it has a more extensive menu and serves alcohol. </p>
+               <div> <a class="more-link" href="img/map_images/coffeeshops_zoom.png">view map</a> </div> <div class="entry-content"> <p>There are several Starbucks near my home, and one that falls directly in the area where I am most often during weekends. However from these data, it is clear that despite being closer to the house, I consistently have chosen a nearby independent coffee shop instead of Starbucks. In fact, I appear to have never stepped foot in the Starbucks, which is odd considering that the independent coffee shop has comperable pricing, and no wifi during the weekend. The 2 distinguishing features of the independent coffee shop is that it has a more extensive menu and serves alcohol. </p>
             </div>
 <!-- End -->
 <!-- Beginning -->
-                <h2>When does our target visit the competitor?</h2>
+<hgroup>
+                <h2>When am I at the competitor?</h2>
               </hgroup>
             <div class="mask2"> <a href="img/map_images/timeofday.png" rel="prettyPhoto"><img src="img/map_images/timeofday.png" alt=""></a> </div>
                <div> <a class="more-link" href="img/map_images/timeofday.png">view map</a> </div>
               <div class="entry-content">
-                <p>Our target has visited the coffee shop a total of 20 times during the three months analyzed, and all 20 visits have occurred during the weekend. The target appears to visit the shop around 8:00 and around 12:00. The target is most likely to be found at the coffee shop mid-morning and early afternoon, between 10-11 and 14-15 respectively.</p>
+                <p>The data show that I have visited the coffee shop a total of 20 times during the three months analyzed, and all 20 visits have occurred during the weekend. Over half of all visits began before 9:00 AM, and 76% of visits began before 11:00 AM, and I am most likely to be found at the coffee shop mid-morning and early afternoon, between 10-11 and 14-15 respectively.</p>
             </div>
 <!-- End -->
 <!-- Beginning -->
-                <h2>How long does our target stay?</h2>
+                <h2>How long do I stay?</h2>
               </hgroup>
             <div class="mask2"> <a href="img/map_images/duration.png" rel="prettyPhoto"><img src="img/map_images/duration.png" alt=""></a> </div>
                <div> <a class="more-link" href="img/map_images/duration.png">view map</a> </div>
               <div class="entry-content">
-                <p>In most cases when our target stays at the competitor coffee shop for more than 30 minutes. Thirty percent of time, the target stops in and leaves immediately. Assuming the duration of their stay is correlated with the number of purchases made (including meals), we can assume that this particular customer has a relatively high average amount of money spent per visit. In fact, if we make some basic inferences, we can estimate the total amount of money spent by our target, as well as their average money spent per vist.</p>
+                <p>Thirty percent of time, I stop in and leave immediately. But in most cases, I stay at the competitor coffee shop for more than 30 minutes. Assuming the duration of their stay is correlated with the number of purchases made (including meals), we can assume that I have a relatively high average amount of money spent per visit. If we make some basic inferences, we can estimate the total amount of money spent by me, as well as my average money spent per vist.</p>
 <p>
-Let's assume that during the times when our target simply enters and leaves the coffee shop, they are simply purchasing a single coffee at a cost of $2.50. Let's also assume that for visits longer than that, the target buys at least 1 coffee per hour, with a maximum number of 3 coffees per day. Additionally, for visits lasting between 1 and 10 hours, let's assume the target has purchased one meal every 6 hours at a value of $15 dollars. With these basic assumptions, we can therefore infer that the total amount spent by this individual has been $132.50 over a period of 3 months, or $6.63 per visit. 
+Let's assume that during the times when I simply enter and leave the coffee shop, I am simply purchasing a single coffee at a cost of $2.50. Let's also assume that for visits longer than that, I buy at least 1 coffee per hour, with a maximum number of 3 coffees per day. Additionally, for visits lasting between 1 and 10 hours, let's assume I have purchased one meal every 6 hours at a value of $15 dollars. With these basic assumptions, we can therefore infer that the total amount spent by this individual has been $132.50 over a period of 3 months, or $6.63 per visit. 
 </p>
             </div>
 <!-- End -->
@@ -382,7 +375,7 @@ Let's assume that during the times when our target simply enters and leaves the 
             <div class="mask2"> <a href="img/map_images/paulvsstarbucks.png" rel="prettyPhoto"><img src="img/map_images/paulvsstarbucks.png" alt=""></a> </div>
                <div> <a class="more-link" href="img/map_images/paulvsstarbucks.png">view map</a> </div>
               <div class="entry-content">
-                <p>Why does our target prefer to go to the Starbucks' competitor? One possible explanation is that the target does not like to patronize national brand coffee chains. Unfortunately, the map data suggests that this probably isn't the case. Zooming out and looking at what other coffee shops this target prefers, we find that the target often frequents the coffee shop and bakery chain "Paul". All of the Paul locations that our target visited had at least 1 2 Starbucks located on the same block, and therefore we can assume that generally, the target will accept purchasing coffee from a national chain.</p>
+                <p>Why do I prefer to go to the Starbucks' competitor? One possible explanation is that I do not like to patronize national brand coffee chains. Unfortunately, the map data suggests that this probably isn't the case. Zooming out and looking at what other coffee shops I prefer, we find that the I often frequent the coffee shop and bakery chain "Paul". All of the Paul locations that I have visited had at least 1 Starbucks located on the same block, and therefore we can assume from the data that generally, I will accept purchasing coffee from a national chain.</p>
             </div>
 <!-- End -->
 <!-- Beginning -->
@@ -391,12 +384,12 @@ Let's assume that during the times when our target simply enters and leaves the 
             <div class="mask2"> <a href="img/map_images/move.png" rel="prettyPhoto"><img src="img/map_images/move.png" alt=""></a> </div>
                <div> <a class="more-link" href="img/map_images/move.png">view map</a> </div>
               <div class="entry-content">
-                <p>From location data alone, we now know that the target will choose the competitors every time given the chance. They will walk longer distances for similar prices and no complimentary wifi. We know the target stays for relatively long periods of time on the weekends, and does not visit coffee shops during the week.</p>
+                <p>From location data alone, we now know that I will choose the competitors every time given the chance. They will walk longer distances for similar prices and no complimentary wifi. We know I stay for relatively long periods of time on the weekends, and does not visit coffee shops during the week.</p>
 <p>
-So what makes the competitors that much more attractive? When comparing Paul and Starbucks, the clear differentiation is the type of food provided. Paul is known as a high-end French patisserie that bakes on site. Looking at Tryst's menu, it appears they also serve freshly made croissants. Perhaps to attract this target, Starbucks should consider improving the quality of their french pastries.
+So what makes the competitors that much more attractive? When comparing Paul and Starbucks, the clear differentiation is the type of food provided. Paul is known as a high-end French patisserie that bakes on site. Looking at the independent coffee shop's menu, it appears they also serve freshly made croissants. Perhaps to attract me, Starbucks should consider improving the quality of their french pastries.
 </p>
 <p>
-Our target also appears to spend a significant amount of time at the coffee shop, potentially reading or working. Therefore, perhaps the ambiance is an important factor, and perhaps comparing the interiors of the competitors would be valuable.</p>
+I also appear to spend a significant amount of time at the coffee shop, potentially reading or working. Therefore, perhaps the ambiance is an important factor, and perhaps comparing the interiors of the competitors would be valuable.</p>
 <p>
 Ultimately, the point of this experiment is to demonstrate the fact that location data can be a very powerful asset in profiling and targeting customers.</p>
             </div>
@@ -413,7 +406,7 @@ Ultimately, the point of this experiment is to demonstrate the fact that locatio
     <!--******************** News Section ********************-->
     <div id="headerwrap">
       <header class="clearfix">
-        <h1>WHAT DOES <span>YOUR LOCATION SAY?</span></h1>
+        <h1><span>WHAT DOES YOUR LOCATION SAY?</span></h1>
         <div class="container">
           <div class="row">
             <div class="span12">
